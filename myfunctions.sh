@@ -21,17 +21,16 @@ mybash() {
 
 # Opens kdenlive with a scale factor of 2
 kden() {
-    env QT_SCALE_FACTOR=2 kdenlive
+  env QT_SCALE_FACTOR=2 kdenlive
 }
 
 # Opens SimpleScreenRecorder with a scale factor of 2
 simple() {
-    env QT_SCALE_FACTOR=2 /usr/bin/simplescreenrecorder
+  env QT_SCALE_FACTOR=2 /usr/bin/simplescreenrecorder
 }
 
 # Installs app image and adds to application folder
 installappimg() {
-
   cd ~/Downloads || { echo "Cannot navigate to Downloads."; exit 1;} 
 
   read -p "Enter the application image filename (with extension): " app_image
